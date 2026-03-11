@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Posicionamento Float</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
 
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        min-height: 100vh;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Posicionamento Float</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-      header {
-        text-align: center;
-      }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      min-height: 100vh;
+    }
 
-      span {
-        color: rgb(130, 172, 45);
-        font-style: italic;
-        font-weight: bold;
-      }
+    header {
+      text-align: center;
+    }
 
-      article {
-        background-color: rgb(130, 172, 45);
-        color: white;
-        border-radius: 2%;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        min-height: 70vh;
-        width: 50vw;
-        padding: 1em 2em;
-        gap: 20px;
-      }
+    span {
+      color: rgb(130, 172, 45);
+      font-style: italic;
+      font-weight: bold;
+    }
 
-      article h3 {
-        text-align: center;
-      }
+    article {
+      background-color: rgb(130, 172, 45);
+      color: white;
+      border-radius: 2%;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 70vh;
+      width: 50vw;
+      padding: 1em 2em;
+      gap: 20px;
+    }
 
-      article span {
-        align-self: flex-end;
-      }
+    article h3 {
+      margin-bottom: auto;
+      text-align: left;
+    }
 
-      .assinatura {
-        align-self: flex-end;
-        margin-top: auto;
-      }
-      #nome {
-        color: rgb(224, 240, 193);
-      }
-    </style>
-  </head>
+    article span {
+      align-self: flex-end;
+    }
 
-  <body>
-    <header>
-      <h1>Carta aos Amigos</h1>
-      <span>Um agradecimento especial</span>
-    </header>
+    .assinatura {
+      margin-top: auto;
+      align-self: flex-end;
+      text-align: right;
+    }
 
-    <article>
-      <h3>Queridos Amigos,</h3>
+    #nome {
+      color: rgb(224, 240, 193);
+    }
+  </style>
+</head>
 
-      <p>
-        Escrevo esta nota porque, na correria do dia a dia, nem sempre paramos
-        para dizer o que realmente importa. Quero agradecer do fundo do coração
-        por cada um de vocês estar presente na minha jornada.
-      </p>
+<body>
+  <header>
+    <h1>Carta aos Amigos</h1>
+    <span>Um agradecimento especial</span>
+  </header>
 
-      <p>
-        Ter a amizade de vocês é ter a certeza de que os momentos bons serão
-        celebrados com o dobro de alegria e que os dias difíceis se tornarão
-        muito mais leves. Valorizo imensamente cada risada compartilhada, os
-        conselhos sinceros e a paciência de estarem ao meu lado,
-        independentemente da situação.
-      </p>
+  <article>
+    <h3>Queridos Amigos,</h3>
 
-      <p>
-        Sou muito grata por nossa conexão e por todas as memórias que já
-        construímos juntos. Obrigada por me incentivarem a ser minha melhor
-        versão e por serem exatamente como são. Que a nossa parceria continue
-        rendendo muitas histórias, encontros e aprendizados.
-      </p>
-      <div class="assinatura">
-        <p id="carinho">Com carinho,</p>
-        <span id="nome">Alana Nascimento</span>
-      </div>
-    </article>
-    <footer>
-      <p>UNIVALI, 2026</p>
-    </footer>
-  </body>
+    <p>
+      Escrevo esta nota porque, na correria do dia a dia, nem sempre paramos
+      para dizer o que realmente importa. Quero agradecer do fundo do coração
+      por cada um de vocês estar presente na minha jornada.
+    </p>
+
+    <p>
+      Ter a amizade de vocês é ter a certeza de que os momentos bons serão
+      celebrados com o dobro de alegria e que os dias difíceis se tornarão
+      muito mais leves. Valorizo imensamente cada risada compartilhada, os
+      conselhos sinceros e a paciência de estarem ao meu lado,
+      independentemente da situação.
+    </p>
+
+    <p>
+      Sou muito grata por nossa conexão e por todas as memórias que já
+      construímos juntos. Obrigada por me incentivarem a ser minha melhor
+      versão e por serem exatamente como são. Que a nossa parceria continue
+      rendendo muitas histórias, encontros e aprendizados.
+    </p>
+    <div class="assinatura">
+      <p id="carinho">Com carinho,</p>
+      <span id="nome">Alana Nascimento</span>
+    </div>
+  </article>
+  <footer>
+    <p>UNIVALI, 2026</p>
+  </footer>
+</body>
+
 </html>
